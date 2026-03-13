@@ -1,7 +1,9 @@
 import sqlite3
 
+dbPath = '../escola.db'
+
 # se conecta com o banco de dados escola.db, ou cria o arquivo se ele não existir
-conn = sqlite3.connect("escola.db")
+conn = sqlite3.connect(dbPath)
 
 # ler o arquivo ../schema.sql e executar as instruções SQL contidas nele
 # é o mesmo que fizemos manualmente quando colocamos o conteúdo
